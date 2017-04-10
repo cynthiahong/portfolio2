@@ -1,0 +1,97 @@
+/**
+ * Simple mixin for absolute positioning
+ */
+/**
+ * Mixin that makes the overlay happen and displays the inner p tag
+ */
+ul > li {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+ul > li > p {
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 1px;
+  color: #FFF;
+  line-height: 1.5em;
+  margin-top: -0.75em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+ul > li:after {
+  content: '';
+  opacity: 0;
+  background: -webkit-linear-gradient(rgba(255, 114, 0, 0.4), rgba(255, 48, 0, 0.5));
+  background: linear-gradient(rgba(255, 114, 0, 0.4), rgba(255, 48, 0, 0.5));
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+ul > li:hover > p, ul > li:hover:after {
+  font-size: 1.5em;
+  opacity: 1;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  font-family: Helvetica;
+  height: 100%;
+  width: 100%;
+}
+
+li {
+  float: left;
+  padding-bottom: 33.3333%;
+  width: 33.3333%;
+}
+
+ul > li:nth-child(1) {
+  background-image: url(http://www.thomaslaupstad.com/blog/pictures/BW_rural_800.jpg);
+}
+
+ul > li:nth-child(2) {
+  background-image: url(http://www.wallcoo.net/nature/new_zealand_landscape/images/Old_Church,%20New%20Zealand.jpg);
+}
+
+ul > li:nth-child(3) {
+  background-image: url(https://c1.staticflickr.com/9/8290/7705251242_85437ee951_z.jpg);
+}
+
+ul > li:nth-child(4) {
+  background-image: url(http://roedyphotography.zenfolio.com/img/s1/v22/p530064174-3.jpg);
+}
+
+ul > li:nth-child(5) {
+  background-image: url(http://ih3.redbubble.net/image.7248087.9824/flat,550x550,075,f.jpg);
+}
+
+ul > li:nth-child(6) {
+  background-image: url(http://m.flikie.com/ImageData/WallPapers/af2fad8b488349598fe158887d831774.jpg);
+}
+
+ul > li:nth-child(7) {
+  background-image: url(http://cdn.c.photoshelter.com/img-get/I0000ppPQZm.oAe4/s/900/900/Waterside-Rocks.jpg);
+}
+
+ul > li:nth-child(8) {
+  background-image: url(http://www.easyfrench.co.uk/blog/wp-content/uploads/2014/05/8144991267_507b97470e_z.jpg);
+}
+
+ul > li:nth-child(9) {
+  background-image: url(http://38.media.tumblr.com/tumblr_m3m35oCrSA1qc3m8wo1_500.jpg);
+}
