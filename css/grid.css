@@ -1,4 +1,4 @@
-/**
+/** http://codepen.io/mahirshah/pen/GvCqe
  * Simple mixin for absolute positioning
  */
 /**
@@ -27,8 +27,8 @@ ul > li > p {
 ul > li:after {
   content: '';
   opacity: 0;
-  background: -webkit-linear-gradient(rgba(255, 114, 0, 0.4), rgba(255, 48, 0, 0.5));
-  background: linear-gradient(rgba(255, 114, 0, 0.4), rgba(255, 48, 0, 0.5));
+  background: -webkit-linear-gradient(rgba(153,153,153, 0.8), rgba(0,0,0, 0.8));
+
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -41,6 +41,7 @@ ul > li:after {
 ul > li:hover > p, ul > li:hover:after {
   font-size: 1.5em;
   opacity: 1;
+  cursor: pointer;
 }
 
 html, body {
@@ -57,41 +58,27 @@ ul {
 li {
   float: left;
   padding-bottom: 33.3333%;
-  width: 33.3333%;
+  width: 50%;
+  list-style: none;
+  margin: 0px !important;
 }
 
 ul > li:nth-child(1) {
-  background-image: url(http://www.thomaslaupstad.com/blog/pictures/BW_rural_800.jpg);
+  background-image: url(../images/The_Triton.png);
 }
 
 ul > li:nth-child(2) {
-  background-image: url(http://www.wallcoo.net/nature/new_zealand_landscape/images/Old_Church,%20New%20Zealand.jpg);
+  background-image: url(../images/Pierre.jpg);
 }
 
 ul > li:nth-child(3) {
-  background-image: url(https://c1.staticflickr.com/9/8290/7705251242_85437ee951_z.jpg);
+  background-image: url(../images/Moonshot.png);
 }
 
 ul > li:nth-child(4) {
-  background-image: url(http://roedyphotography.zenfolio.com/img/s1/v22/p530064174-3.jpg);
+  background-image: url(../images/cogs187a.png);
 }
 
 ul > li:nth-child(5) {
-  background-image: url(http://ih3.redbubble.net/image.7248087.9824/flat,550x550,075,f.jpg);
-}
-
-ul > li:nth-child(6) {
-  background-image: url(http://m.flikie.com/ImageData/WallPapers/af2fad8b488349598fe158887d831774.jpg);
-}
-
-ul > li:nth-child(7) {
-  background-image: url(http://cdn.c.photoshelter.com/img-get/I0000ppPQZm.oAe4/s/900/900/Waterside-Rocks.jpg);
-}
-
-ul > li:nth-child(8) {
-  background-image: url(http://www.easyfrench.co.uk/blog/wp-content/uploads/2014/05/8144991267_507b97470e_z.jpg);
-}
-
-ul > li:nth-child(9) {
-  background-image: url(http://38.media.tumblr.com/tumblr_m3m35oCrSA1qc3m8wo1_500.jpg);
+  background-image: url(../images/paintbrush.png);
 }

@@ -1,23 +1,28 @@
-@font-face {
+/*@font-face {
   font-family: 'Futura';
   src:
        url('Futura.ttf')  format('truetype');
-}
-nav, h3, h4, footer{
-  font-family: 'Futura';
+} */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+
+nav, h3, h4, footer, body, html{/*
+  font-family: 'Futura'; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 p{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
 #logo{
   font-size: 22px;
-  letter-spacing: 0.15em;
+  letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
   float: left;
   margin:0;
   display: table;
+  font-weight: 800;
 }
 
 nav {
@@ -105,17 +110,21 @@ h3.name{
 }
 
 h3.page-title{
-  font-weight: bold;
-  font-size: 2.5em;
-  letter-spacing: 0.2em;
+  letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
+  font: 32px/42px 'Open Sans', sans-serif;
+  font-weight: 800;
+  margin: 2rem;
 }
+
 h4{
   color: #5D737E;
 }
+
 .background-home{/*
   background-image: url("../images/lake.jpg"); */
+  background-image: url("../images/Workspace.png");
   width: 100%;
   background-color: #b2dff4;
   background-size: cover;
@@ -185,7 +194,7 @@ a:hover {
   color: #000;
 }
 
-a:before {
+.underline:before {
   line-height: 30px;
   content: "";
   position: absolute;
@@ -200,8 +209,92 @@ a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before {
+.underline:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: url("../images/up-arrow.svg") no-repeat center 43%;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.button{
+  font-size: 16px;
+  border: 2px solid #25283D;
+  background-color: transparent !important;
+  color: #25283D;
+  border-radius: 0px;
+  text-transform: uppercase;
+  margin: 0px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: 0.1s background-color linear, 0.1s color linear;
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.button:hover{
+  background-color: #25283D !important;
+  color: white;
+  border-color: #25283D;
 }
