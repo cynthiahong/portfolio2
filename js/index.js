@@ -9,13 +9,7 @@ $(document).ready(function(){
     $("#footer").load("footer.html");
 });
 
-var toggle = document.getElementById("nav-toggle");
-var navContainer = document.getElementById("nav-container");
-console.log(toggle);
-/*
-toggle.addEventListener('click', function() {
-  navContainer.classList.toggle('active');
-}); */
+
 
 
 /* https://codepen.io/gschier/pen/jkivt
@@ -94,4 +88,31 @@ $('a.back-to-top').click(function() {
 		scrollTop: 0
 	}, 700);
 	return false;
+});
+
+/* smooth scroll for anchor */
+var $root = $('html, body');
+$('a').click(function() {
+    var href = $.attr(this, 'href');
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
+    });
+    return false;
+});
+
+
+/* sticky navigation bar */
+$(document).ready(function() {
+    var $nav = $('#navbar'),
+        posTop = $nav.position().top;
+    $(window).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > posTop) {
+            $nav.addClass('fixed');
+        } else {
+            $nav.removeClass('fixed');
+        }
+    });
 });

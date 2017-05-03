@@ -3,7 +3,7 @@
  */
 /**
  * Mixin that makes the overlay happen and displays the inner p tag
- */
+ 
 ul > li {
   background-size: cover;
   background-position: center;

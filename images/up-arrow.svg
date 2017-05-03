@@ -7,12 +7,12 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="up-arrow" fill-rule="nonzero">
             <g id="Group">
-                <g fill="#B2DFF4">
+                <g fill="#25283D">
                     <rect id="Rectangle-path" x="1" y="1" width="52" height="52"></rect>
                     <path d="M54,54 L0,54 L0,0 L54,0 L54,54 Z M2,52 L52,52 L52,2 L2,2 L2,52 Z" id="Shape"></path>
                 </g>
-                <path d="M27,41.5 C26.448,41.5 26,41.053 26,40.5 L26,14.5 C26,13.947 26.448,13.5 27,13.5 C27.552,13.5 28,13.947 28,14.5 L28,40.5 C28,41.053 27.552,41.5 27,41.5 Z" id="Shape" fill="#25283D"></path>
-                <polygon id="Shape" fill="#25283D" points="36.293 24.207 27 14.914 17.707 24.207 16.293 22.793 27 12.086 37.707 22.793"></polygon>
+                <path d="M27,41.5 C26.448,41.5 26,41.053 26,40.5 L26,14.5 C26,13.947 26.448,13.5 27,13.5 C27.552,13.5 28,13.947 28,14.5 L28,40.5 C28,41.053 27.552,41.5 27,41.5 Z" id="Shape" fill="#fff"></path>
+                <polygon id="Shape" fill="#fff" points="36.293 24.207 27 14.914 17.707 24.207 16.293 22.793 27 12.086 37.707 22.793"></polygon>
             </g>
         </g>
     </g>
